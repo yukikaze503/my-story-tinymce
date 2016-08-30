@@ -1,13 +1,21 @@
-body { background: #e2e2e2; }
+/*初始化样式*/
+body { background: #e2e2e2; margin: 0; padding: 0; }
 
-textarea { line-height:1.5em; }
-image { border:none; }
-p { line-height:1.5em; }
-a { color:#3366CC; text-decoration:underline; }
-a:hover { color:#FF3300; }
+textarea { line-height: 1.5em; }
+img { border: none; }
+p { line-height: 1.5em; }
+a { color: #3366CC; text-decoration: underline; }
+a:hover { color: #FF3300; }
 
+/*首页样式*/
+.page { width: 1000px; background: #fff; margin: 10px auto; padding: 30px; border-radius: 5px; }
 .header { margin: 20px; border-bottom: 1px solid #ccc; background: #000; }
 .header h1 {font-size: 44px; color: #fff; }
 
 .notice { background-color: #d9edf7; padding: 15px; }
 .error { background-color: #f2dede; padding: 15px; }
+
+/*footer样式*/
+.footer { padding-top: 10px; font-size: 12px; }
+/*.footer a { line-height: 16px; text-decoration: none; }*/
+/*.footer img { vertical-align: middle; }*/
