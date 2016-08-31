@@ -1,2 +1,22 @@
-<div class="">
+<div class="page">
+  <%= link_to "写故事", new_story_path, class: 'btn_create' %><br/>
+  <% @stories.each do |story| %>
+  <div class="story_wrapper">
+    <div class="pic_wrapper">
+      <%= link_to image_tag(story.avatar_url(:small_thumb)), story_path(story.id) %>
+    </div>
+    <div class="story_title">
+      <h3><%= link_to story.title, story_path(story.id) %></h3>
+    </div>
+    <div class="story_info">
+      <div class="timeinfo">
+        <%= story.created_at.to_formatted_s(:db) %>
+      </div>
+      <div class="operation">
+        <%= link_to "编辑", edit_story_path(story.id) %>
+        <%= link_to "删除", story_path(story.id), method: :delete %>
+      </div>
+    </div>
+  </div>
+  <% end %>
 </div>
