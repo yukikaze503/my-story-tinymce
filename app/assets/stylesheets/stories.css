@@ -8,28 +8,77 @@ a { color: #9dd812; }
 a:hover { text-decoration: underline; }
 
 /*header样式*/
-.header { margin: 20px; border-bottom: 1px solid #ccc; background: #000; }
-.header h1 { font-size: 44px; color: #fff; }
+.header { padding: 28px; background: #1d1612; }
+.header h1 { font-size: 44px; color: #fff; margin-left: 28px; }
 .user_info { float: right; }
-.usre_info a { font-size: 14px; color: #fff; }
-.username { font-size: 14px, color: #fff; }
+.usre_info a { font-size: 16px; color: #fff; margin-left: 28px; }
+.username { font-size: 16px, color: #fff; }
 
 /*index样式*/
-.page { width: 1000px; margin: 20px auto; padding: 30px 40px 30px 0; background: #fff; border-radius: 5px; }
-.btn_create { margin-left: 40px; padding: 15px; background: #9dd812; color: #fff; font-size: 18px; border-radius: 10px; }
+.page {
+  width: 1000px;
+  margin: 20px auto;
+  padding: 30px 40px 30px 0;
+  background: #fff;
+  border-radius: 5px;
+}
+.btn_create {
+  margin-left: 40px;
+  padding: 15px;
+  background: #9dd812;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+}
 .story_wrapper { width: 280px; height: 190px; margin: 40px 0 40px 40px; }
-.pic_wrapper {width: 270; height: 180px; text-overflow: hidden; border: 5px solid #fff; box-shadow: 0 0 8px #888; }
+.pic_wrapper {
+  width: 270;
+  height: 180px;
+  text-overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: 0 0 8px #888;
+}
 .story_title { padding: 0 14px; }
-.story_title h3 { overflow: hidden; width: 180px; text-overflow: ellipsis; white-space: nowrap; margin: 12px 0 20px; font-size: 20px; color: #333; }
+.story_title h3 {
+  overflow: hidden;
+  width: 180px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 12px 0 20px;
+  font-size: 20px;
+  color: #1d1612;
+}
 .story_info { padding: 0 14px; }
 .timeinfo { font-size: 14px; color: #999; float: right; }
 .operation { float: left }
 .operation a { font-size: 14px; margin-left: 15px; }
 
-
-
-.notice { background-color: #d9edf7; padding: 15px; }
-.error { background-color: #f2dede; padding: 15px; }
+/*登录注册样式*/
+.box { margin-top: 50px auto; padding: 20px; }
+.box h2 { font-weight:400; color:#1d1612; font-size:24px; }
+.error {
+  margin: 10 auto;
+  background-color: #fff7b5;
+  padding: 15px;
+  border: 1px solid #ffcf5d;
+  width: 250px;
+  font-size: 18px;
+  color: #ffcf5d;
+  text-align: center;
+}
+.account { margin: 0 auto; text-align: center; width: 250px; }
+.account a { font-size: 14px; margin: 20px auto; }
+.form_item { padding: 10px auto; }
+.account input { width: 200px; font-size: 14px; padding: 9px; }
+.account label { font-size: 14px; color: #666; margin-right: 5px; }
+.submit {
+  margin: 10px auto;
+  padding: 10px;
+  background: #9dd812;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 10px;
+}
 
 /*footer样式*/
 .footer { padding-top: 10px; font-size: 12px; color: #999; }

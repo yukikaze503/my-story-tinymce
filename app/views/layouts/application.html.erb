@@ -11,14 +11,12 @@
   </head>
 
   <body>
-    <div class="headr">
-      <% image_tag(pen.png) %><h1>我的故事</h>
+    <div class="header">
+      <%= image_tag(pen.png) %><h1>我的故事</h1>
       <div class="user_info">
         <% if logined? %>
-          <div class="username">
-          <%= current_user.nickname %>
+          <%= current_user.nickname, class: 'username' %>
           <%= link_to "退出", logout_path, method: :delete %>
-          </div>
         <% end %>
       </div>
     </div>

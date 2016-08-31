@@ -1,0 +1,18 @@
+<div class="box">
+  <h2>登录</h2>
+  <% if flash[:error] %>
+  <p class="error"><%= flash[:error] %></p>
+  <% end %>
+  <div class="account">
+    <%= form_tag login_path do |f| %>
+      <div class="form_item">
+        <label>用户名：</label><%= text_field_tag :nickname %>
+      </div>
+      <div class="form_item">
+        <label>密码：</label><%= password_field_tag :password %>
+      </div>
+      <p><%= submit_tag "登录",class: 'submit' %></p>
+    <% end %>
+    <p><%= link_to "注册", signup_path %></p>
+  </div>
+</div>
