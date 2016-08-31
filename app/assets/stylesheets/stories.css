@@ -7,15 +7,29 @@ p { line-height: 1.5em; }
 a { color: #3366CC; text-decoration: underline; }
 a:hover { color: #FF3300; }
 
-/*首页样式*/
+/*header样式*/
 .page { width: 1000px; background: #fff; margin: 10px auto; padding: 30px; border-radius: 5px; }
 .header { margin: 20px; border-bottom: 1px solid #ccc; background: #000; }
-.header h1 {font-size: 44px; color: #fff; }
+.header h1 { font-size: 44px; color: #fff; }
+.user_info { float: right; }
+.usre_info a { font-size: 14px; color: #fff; }
+.username { font-size: 14px, color: #fff; }
+
+/*index样式*/
+.main_box { margin: 10px auto; padding-top: 30px; padding-bottom: 30px; width: 1000px; background: #fff; border-radius: 5px; }
+.story_wrapper { width: 298; height: 208px; margin: 30px 0 20px 30px; }
+.story_pic {width: 270; height: 180px; text-overflow: hidden; border: 6px solid #fff; box-shadow: 0 0 8px #888; }
+.story_wrapper h3 { overflow: hidden; width: 120px; text-overflow: ellipsis; white-space: nowrap; margin: 12px 0 20px; }
+.info {}
+.info_edit {}
+.info a { font-size: 14px; color: #333; margin-left: 10px; }
+.info a:hover { color: #9dd812; }
+.timeinfo { font-size: 14px; color: #999; float: right; }
 
 .notice { background-color: #d9edf7; padding: 15px; }
 .error { background-color: #f2dede; padding: 15px; }
 
 /*footer样式*/
-.footer { padding-top: 10px; font-size: 12px; }
+.footer { padding-top: 10px; font-size: 12px; color: #999; }
 /*.footer a { line-height: 16px; text-decoration: none; }*/
 /*.footer img { vertical-align: middle; }*/
