@@ -4,8 +4,9 @@ Rails.application.routes.draw do
   resources :sessions
 
   get '/signup', to: 'users#new'
+  get  '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
-  delete '/logout', to: 'session#destroy'
+  delete '/logout', to: 'sessions#destroy'
 
   root 'stories#index'
 

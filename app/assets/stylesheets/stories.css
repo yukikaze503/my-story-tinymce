@@ -1,18 +1,23 @@
 /*初始化样式*/
-body { background: #e2e2e2; margin: 0; padding: 0; }
+body {
+  background: #e2e2e2;
+  margin: 0;
+  padding: 0;
+  font-family: "HanHei SC", "PingHei", "PingFang SC", "STHeitiSC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
 
 textarea { line-height: 1.5em; }
 img { border: none; }
 p { line-height: 1.5em; }
-a { color: #9dd812; }
+a { text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /*header样式*/
-.header { padding: 28px; background: #1d1612; }
-.header h1 { font-size: 44px; color: #fff; margin-left: 28px; }
+.header { padding: 20px; background: #1d1612; }
+.header span { font-size: 36px; color: #fff; margin-left: 20px; }
 .user_info { float: right; }
-.usre_info a { font-size: 16px; color: #fff; margin-left: 28px; }
 .username { font-size: 16px, color: #fff; }
+.usrename a { font-size: 16px; color: #fff; margin-left: 20px; }
 
 /*index样式*/
 .page {
@@ -54,26 +59,26 @@ a:hover { text-decoration: underline; }
 .operation a { font-size: 14px; margin-left: 15px; }
 
 /*登录注册样式*/
-.box { margin-top: 50px auto; padding: 20px; }
-.box h2 { font-weight:400; color:#1d1612; font-size:24px; }
+.box { margin-top: 50px auto; padding: 20px; width: 350px; background-color: #fff; border-radius: 5px; }
+.box h2 { font-weight:400; color:#1d1612; font-size:24px; margin-left: 45px; }
 .error {
   margin: 10 auto;
-  background-color: #fff7b5;
-  padding: 15px;
-  border: 1px solid #ffcf5d;
-  width: 250px;
-  font-size: 18px;
-  color: #ffcf5d;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ff140f;
+  width: 300px;
+  font-size: 14px;
+  color: #ff140f;
   text-align: center;
 }
-.account { margin: 0 auto; text-align: center; width: 250px; }
+.account { margin: 0 auto; width: 300px; }
 .account a { font-size: 14px; margin: 20px auto; }
-.form_item { padding: 10px auto; }
-.account input { width: 200px; font-size: 14px; padding: 9px; }
-.account label { font-size: 14px; color: #666; margin-right: 5px; }
+.form_item { margin: 10px auto; }
+.form_item input { width: 278px; font-size: 14px; padding: 9px; }
+/*.form_item label { font-size: 14px; color: #666; }*/
 .submit {
   margin: 10px auto;
-  padding: 10px;
+  padding: 10px 20px;
   background: #9dd812;
   color: #fff;
   font-size: 14px;
