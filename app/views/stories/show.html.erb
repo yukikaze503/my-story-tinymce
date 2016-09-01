@@ -4,15 +4,14 @@
 </div>
 
 <div class="page">
-  <div class="story_contain">
+  <div class="form_wrapper">
     <div class="big_pic">
       <%= image_tag (story.avatar_url(:thumb).to_s) %>
     </div>
-    <p class="story_title1"><%= story.title %></p>
-    <p class="writer"><%= current_user.nickname %></p>
-    <span class="timeinfo1"><%= story.created_at.to_formatted_s %></span>
+    <h3><%= story.title %></h3>
+    <p class="timeinfo1"><%= story.created_at.to_formatted_s %></p>
     <div class="body_contain">
-      <p><%= story.body %></p>
+      <%= story.body %>
     </div>
   </div>
 

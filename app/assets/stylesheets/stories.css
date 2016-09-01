@@ -27,6 +27,7 @@ a { text-decoration: none; }
   padding: 30px 40px 30px 0;
   background: #fff;
   border-radius: 5px;
+  min-height: 500px;
 }
 .btn_create {
   margin-left: 40px;
@@ -77,9 +78,9 @@ a { text-decoration: none; }
 .form_item { margin: 10px auto; }
 .form_item input { width: 278px; font-size: 14px; padding: 9px; }
 .form_item label { font-size: 14px; color: #666; }
-.submit {
+.btn_submit {
   margin: 10px auto;
-  padding: 8px 25px;
+  padding: 4px 25px;
   background: #9dd812;
   color: #fff;
   font-size: 14px;
@@ -88,5 +89,33 @@ a { text-decoration: none; }
 
 /*footer样式*/
 .footer { padding-top: 10px; font-size: 12px; color: #999; text-align: center; }
-/*.footer a { line-height: 16px; text-decoration: none; }*/
-/*.footer img { vertical-align: middle; }*/
+
+/*面包屑*/
+.nav { margin: 10px auto 0; width: 1000px; }
+.nav a { font-size: 14px; color: #9dd812; margin-right: 5px; }
+.arrow { color: #999; margin-right: 5px; }
+.trace { font-size: 14px; color: #666; }
+
+/*form样式*/
+.form_wrapper { width: 800px; margin-left: 40px; padding: 0 60px; }
+.long_txt { width:98%; }
+/*.form_item label { font-size: 14px; color: #666; }*/
+.btn { text-align: center; }
+.btn_cancel { margin: 10px auto;
+  padding: 4px 25px;
+  background: ##F6F6F6;
+  color: #333;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+/*详情页样式*/
+.big_pic { width: 450px; height: 300px; overflow: hidden; }
+.form_wrapper h3 {
+  width: 98%;
+  margin: 15px 0;
+  font-size: 20px;
+  color: #1d1612;
+}
+.timeinfo1 { font-size: 14px; color: #999; }
+.body_contain { width: 800px; margin: 15px 0 0; }
