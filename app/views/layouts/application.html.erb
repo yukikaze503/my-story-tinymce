@@ -12,13 +12,10 @@
 
   <body>
     <div class="header">
-      <%= image_tag("pen.png") %><span>我的故事</span>
+      <%= image_tag "pen.png", class: "log" %><span class="title">我的故事</span>
       <div class="user_info">
         <% if logined! %>
-        <div class="usename">
-          <%= current_user.nickname %>
-          <%= link_to "退出", logout_path, method: :delete %>
-        </div>
+          <span class="username"><%= current_user.nickname %></span><%= link_to "退出", logout_path, method: :delete %>
         <% end %>
       </div>
     </div>
