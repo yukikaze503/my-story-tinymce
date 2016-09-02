@@ -46,7 +46,7 @@ a { text-decoration: none; }
   border: 5px solid #fff;
   box-shadow: 0 0 8px #888;
 }
-.story_title { padding: 14px 14px 6px 14px; }
+.story_title { padding: 14px 0 6px 0; }
 .story_title a {
   overflow: hidden;
   width: 180px;
@@ -56,7 +56,7 @@ a { text-decoration: none; }
   font-size: 20px;
   color: #1d1612;
 }
-.story_info { padding: 0 14px; height: 30px; }
+.story_info { height: 30px; }
 .timeinfo { font-size: 14px; color: #999; float: left; margin-top: 2px; }
 .operation { float: right;}
 .operation a { font-size: 14px; margin-left: 15px; color: #9dd812; }
@@ -98,7 +98,7 @@ a { text-decoration: none; }
 .trace { font-size: 14px; color: #666; }
 
 /*form样式*/
-.form_wrapper { width: 800px; margin-left: 40px; padding: 0 60px; }
+.form_wrapper { width: 800px; margin: 0 40px; padding: 0 60px; }
 .long_txt { width:98%; }
 /*.form_item label { font-size: 14px; color: #666; }*/
 .btn { text-align: center; }
@@ -111,7 +111,7 @@ a { text-decoration: none; }
 }
 
 /*详情页样式*/
-.big_pic { width: 450px; height: 300px; overflow: hidden; }
+.big_pic { width: 800px; height: 530px; overflow: hidden; }
 .form_wrapper h3 {
   width: 98%;
   margin: 15px 0;

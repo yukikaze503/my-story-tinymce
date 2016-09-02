@@ -11,19 +11,18 @@ class StoriesController < ApplicationController
   end
 
   def create
-    story = Story.new
+    story = Story.new(story_params)
     story.attributes = story_params.merge!(user_id: current_user.id)
     if story.save
       redirect_to stories_path
     else
-      Rails.logger.debug "---------- #{user.errors.inspect}"
+      Rails.logger.debug "---------- #{story.errors.inspect}"
       render :new
     end
   end
 
   def edit
     @story = Story.find params[:id]
-    redirect_to edit_story_path(story.id)
   end
 
   def show
@@ -47,6 +46,6 @@ class StoriesController < ApplicationController
 
   private
   def story_params
-    params.require[:story].permit(:title, :body, {avatar: []})
+    params.require(:story).permit(:title, :body, :avatar)
   end
 end
