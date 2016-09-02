@@ -1,15 +1,15 @@
 <div class="form_wrapper">
   <%= form_for @story do |f| %>
     <div class="form_item">
-      <label>故事图片</label>
+      <label>故事图片</label><br/>
       <%= f.file_field :avatar %>
     </div>
     <div class="form_item">
-      <label>故事标题</label>
+      <label>故事标题</label><br/>
       <%= f.text_field :title, class: 'long-txt' %>
     </div>
     <div class="form_item">
-      <label>故事正文</label>
+      <label>故事正文</label><br/>
       <%= f.text_area :body, id: 'editor' %>
     </div>
     <div class="btn">
@@ -20,10 +20,9 @@
 </div>
 <script type="text/javascript">
 var editor = new Simditor({
-  textarea: $('#post_body'),
+  textarea: $('#editor'),
   toolbar: ['title', 'bold', 'italic', 'underline', 'color', '|', 'ol', 'ul', 'blockquote', 'code', 'table', 'link', '|','hr','indent','outdent','alignment','fullscreen'],
   placeholder: '写下你的故事...',
   pasteImage: false,
-  fileKey: 'file',
 });
 </script>

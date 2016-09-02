@@ -6,12 +6,12 @@
 <div class="page">
   <div class="form_wrapper">
     <div class="big_pic">
-      <%= image_tag (@story.avatar_url(:thumb).to_s) %>
+      <%= image_tag (@story.avatar_url.to_s) %>
     </div>
     <h3><%= @story.title %></h3>
     <p class="timeinfo1"><%= @story.created_at.to_formatted_s %></p>
     <div class="body_contain">
-      <%= @story.body %>
+      <%= sanitize(@story.body) %>
     </div>
   </div>
 

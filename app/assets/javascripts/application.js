@@ -14,4 +14,4 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-js //= require simditor //= require simditor/simditor-fullscreen
+//= require simditor
