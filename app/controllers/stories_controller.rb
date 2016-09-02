@@ -11,18 +11,19 @@ class StoriesController < ApplicationController
   end
 
   def create
-    story = Story.new(story_params)
+    story = Story.new
     story.attributes = story_params.merge!(user_id: current_user.id)
     if story.save
-      flash[:notice] = "创建成功"
       redirect_to stories_path
     else
+      Rails.logger.debug "---------- #{user.errors.inspect}"
       render :new
     end
   end
 
   def edit
     @story = Story.find params[:id]
+    redirect_to edit_story_path(story.id)
   end
 
   def show
@@ -32,7 +33,6 @@ class StoriesController < ApplicationController
   def update
     story = Story.find params[:id]
     if story.update(story_params)
-      flash[:notice] = "修改成功"
       redirect_to stories_path
     else
       render :index
@@ -42,12 +42,11 @@ class StoriesController < ApplicationController
   def destroy
     story = Story.find params[:id]
     story.destroy  # delete 和 destroy 有什么区别？
-    flash[:notice] = "删除成功"
     redirect_to stories_path
   end
 
   private
   def story_params
-    params[:story].permit(:title, :body, {avatar: []})
+    params.require[:story].permit(:title, :body, {avatar: []})
   end
 end

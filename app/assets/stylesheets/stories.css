@@ -24,20 +24,21 @@ a { text-decoration: none; }
 .page {
   width: 1000px;
   margin: 20px auto;
-  padding: 30px 40px 30px 0;
+  padding: 40px 0;
   background: #fff;
   border-radius: 5px;
   min-height: 500px;
+  display: table;
 }
 .btn_create {
   margin-left: 40px;
-  padding: 15px 25px;
+  padding: 10px 30px;
   background-color: #9dd812;
   color: #fff;
   font-size: 18px;
   border-radius: 10px;
 }
-.story_wrapper { width: 280px; height: 190px; margin: 40px 0 40px 40px; }
+.story_wrapper { width: 280px; height: 260px; margin: 40px 0 0 40px; float: left; }
 .pic_wrapper {
   width: 270;
   height: 180px;
@@ -45,19 +46,19 @@ a { text-decoration: none; }
   border: 5px solid #fff;
   box-shadow: 0 0 8px #888;
 }
-.story_title { padding: 0 14px; }
-.story_title h3 {
+.story_title { padding: 14px 14px 6px 14px; }
+.story_title a {
   overflow: hidden;
   width: 180px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin: 12px 0 20px;
+  margin: 6px 0 6px;
   font-size: 20px;
   color: #1d1612;
 }
-.story_info { padding: 0 14px; }
-.timeinfo { font-size: 14px; color: #999; float: right; }
-.operation { float: left }
+.story_info { padding: 0 14px; height: 30px; }
+.timeinfo { font-size: 14px; color: #999; float: left; margin-top: 2px; }
+.operation { float: right;}
 .operation a { font-size: 14px; margin-left: 15px; color: #9dd812; }
 
 /*登录注册样式*/
