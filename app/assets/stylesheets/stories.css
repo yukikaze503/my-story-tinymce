@@ -14,8 +14,8 @@ a { text-decoration: none; }
 
 /*header样式*/
 .header { padding: 20px; background: #1d1612; }
-.log { margin-top: 10px; }
-.title { font-size: 36px; color: #fff; margin-left: 20px; }
+.log { vertical-align: top; }
+.title { font-size: 30px; color: #fff; margin-left: 16px; }
 .user_info { float: right; margin-top: 16px; }
 .username { font-size: 16px; color: #fff; }
 .header a { font-size: 16px; color: #fff; margin-left: 15px; }
@@ -46,12 +46,14 @@ a { text-decoration: none; }
   border: 5px solid #fff;
   box-shadow: 0 0 8px #888;
 }
-.story_title { padding: 14px 0 6px 0; }
-.story_title a {
+.story_title {
+  padding: 14px 0 6px 0;
   overflow: hidden;
-  width: 180px;
   text-overflow: ellipsis;
   white-space: nowrap;
+ }
+.story_title a {
+  width: 180px;
   margin: 6px 0 6px;
   font-size: 20px;
   color: #1d1612;
@@ -75,17 +77,18 @@ a { text-decoration: none; }
   text-align: center;
 }
 .account { margin: 0 auto; width: 300px; }
-.account a { font-size: 14px; margin: 20px auto; color: }
+.account a { font-size: 14px; margin: 20px auto; color: #9dd812; }
 .form_item { margin: 10px auto; }
 .form_item input { width: 278px; font-size: 14px; padding: 9px; }
 .form_item label { font-size: 14px; color: #666; }
 .btn_submit {
   margin: 10px auto;
-  padding: 4px 25px;
+  padding: 6px 25px;
   background: #9dd812;
   color: #fff;
   font-size: 14px;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: none;
 }
 
 /*footer样式*/
@@ -100,12 +103,10 @@ a { text-decoration: none; }
 /*form样式*/
 .form_wrapper { width: 800px; margin: 0 40px; padding: 0 60px; }
 .long_txt { width:98%; }
-/*.form_item label { font-size: 14px; color: #666; }*/
 .btn { text-align: center; }
 .btn_cancel { margin: 10px auto;
   padding: 4px 25px;
-  background: ##F6F6F6;
-  color: #333;
+  color: #666;
   font-size: 14px;
   border-radius: 10px;
 }
