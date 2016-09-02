@@ -3,7 +3,7 @@
   <% @stories.each do |story| %>
   <div class="story_wrapper">
     <div class="pic_wrapper">
-      <%= link_to image_tag(story.avatar_url(:small_thumb)), story_path(story.id) %>
+      <%= link_to image_tag(story.avatar_url(:small_thumb).to_s), story_path(story.id) %>
     </div>
     <div class="story_title">
       <h3><%= link_to story.title, story_path(story.id) %></h3>

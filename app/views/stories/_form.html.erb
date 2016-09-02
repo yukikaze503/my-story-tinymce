@@ -6,14 +6,14 @@
     </div>
     <div class="form_item">
       <label>故事标题</label>
-      <%= f.text_field :body, class: 'long-txt' %>
+      <%= f.text_field :title, class: 'long-txt' %>
     </div>
     <div class="form_item">
       <label>故事正文</label>
-      <%= f.text_field :body, type: 'hidden' %>
+      <%= f.text_area :body, id: 'editor' %>
     </div>
     <div class="btn">
-      <%= link_to "提交", redirect_to stories_path, class: 'btn_submit' %>
+      <%= f.submit "提交", class: 'btn_submit' %>
       <%= link_to "取消", stories_path, class: 'btn_cancel' %>
     </div>
   <% end %>

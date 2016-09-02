@@ -1,17 +1,17 @@
 <div class="nav">
   <%= link_to "首页", stories_path %><small class="arrow">></small>
-  <span class="trace"><%= story.title %></span>
+  <span class="trace"><%= @story.title %></span>
 </div>
 
 <div class="page">
   <div class="form_wrapper">
     <div class="big_pic">
-      <%= image_tag (story.avatar_url(:thumb).to_s) %>
+      <%= image_tag (@story.avatar_url(:thumb).to_s) %>
     </div>
-    <h3><%= story.title %></h3>
-    <p class="timeinfo1"><%= story.created_at.to_formatted_s %></p>
+    <h3><%= @story.title %></h3>
+    <p class="timeinfo1"><%= @story.created_at.to_formatted_s %></p>
     <div class="body_contain">
-      <%= story.body %>
+      <%= @story.body %>
     </div>
   </div>
 

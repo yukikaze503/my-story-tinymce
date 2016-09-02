@@ -6,14 +6,18 @@ class StoriesController < ApplicationController
     @story = Story.new
   end
 
-  def creater
+  def new
+    @story = Story.new
+  end
+
+  def create
     story = Story.new(story_params)
     story.attributes = story_params.merge!(user_id: current_user.id)
     if story.save
       flash[:notice] = "创建成功"
       redirect_to stories_path
     else
-      render :index
+      render :new
     end
   end
 
@@ -44,6 +48,6 @@ class StoriesController < ApplicationController
 
   private
   def story_params
-    params[:stories].permit(:title, :body, {avatar: []})
+    params[:story].permit(:title, :body, {avatar: []})
   end
 end

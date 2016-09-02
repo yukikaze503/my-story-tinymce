@@ -4,6 +4,7 @@ class CreateStories < ActiveRecord::Migration[5.0]
       t.string :title
       t.text :body
       t.string :avatar
+      t.timestamps null: false
     end
   end
 end
