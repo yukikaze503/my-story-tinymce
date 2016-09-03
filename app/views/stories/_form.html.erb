@@ -10,7 +10,7 @@
     </div>
     <div class="form_item">
       <label>故事正文</label><br/>
-      <%= f.text_area :body, id: 'editor' %>
+      <%= f.text_area :body, id: 'story_body', :type=> 'hidden' %>
     </div>
     <div class="btn">
       <%= f.submit "提交", class: 'btn_submit' %>
@@ -20,7 +20,7 @@
 </div>
 <script type="text/javascript">
 var editor = new Simditor({
-  textarea: $('#editor'),
+  textarea: $('#story_body'),
   toolbar: ['title', 'bold', 'italic', 'underline', 'color', '|', 'ol', 'ul', 'blockquote', 'code', 'table', 'link', '|','hr','indent','outdent','alignment','fullscreen'],
   pasteImage: false,
 });
