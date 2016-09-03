@@ -29,6 +29,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'simditor'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'tinymce-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
